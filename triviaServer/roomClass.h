@@ -8,7 +8,7 @@ class Room
 {
 public:
 	Room(int, User*, string, int, int, int);
-	bool joinRoom(User*);
+	bool joinRoom(User*); 
 	void leaveRoom(User*);
 	int closeRoom(User*);
 	vector<User*> getUsers();
@@ -62,3 +62,4 @@ string Room::getUsersListMessage()
 	}
 	return message;
 }
+
