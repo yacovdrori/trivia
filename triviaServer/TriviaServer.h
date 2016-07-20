@@ -17,7 +17,7 @@ private:
 	void handleRecievedMessages(RecievedMessage* msg);
 	void bindAndListen();
 	void accept();
-	void clientHandler(SOCKET s);
+	void clientHandler(SOCKET client);
 	// Safly delete a user
 	void safeDeleteUser(RecievedMessage* msg);
 	User* handleSignin(RecievedMessage* msg);

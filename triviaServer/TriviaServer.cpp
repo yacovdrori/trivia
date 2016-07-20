@@ -5,6 +5,9 @@
 #include <iostream>
 #include <thread>
 #include "User.h"
+#include "Helper.h"
+#include "RecievedMessage.h"
+#include "roomClass.h"
 
 using namespace std;
 
@@ -83,7 +86,7 @@ void TriviaServer::accept()
 	}
 
 	// כאן צריך לפתוח תרד ולישלוח לו את הסוקט
-	thread client_thread(clientHandler, AcceptSocket);
+	thread client_thread(&clientHandler,this, AcceptSocket);
 //=======================================================================
 	// פונקציה שסוגרת את הסוקט הראשי
 	if (_socket)
@@ -93,12 +96,16 @@ void TriviaServer::accept()
 
 	//return server_fd;
 
-
 }
 
 
 void TriviaServer::clientHandler(SOCKET client)
 {
+	
+	{
+		int msg = Helper::getMessageTypeCode(client);
+		cout << msg;
+	}
 }
 
 

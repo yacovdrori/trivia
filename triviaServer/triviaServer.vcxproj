@@ -110,11 +110,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Helper.cpp" />
+    <ClCompile Include="RecievedMessage.cpp" />
+    <ClCompile Include="roomClass.cpp" />
     <ClCompile Include="server.cpp" />
+    <ClCompile Include="Source.cpp" />
     <ClCompile Include="TriviaServer.cpp" />
     <ClCompile Include="User.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Helper.h" />
+    <ClInclude Include="RecievedMessage.h" />
+    <ClInclude Include="roomClass.h" />
     <ClInclude Include="TriviaServer.h" />
     <ClInclude Include="User.h" />
   </ItemGroup>
