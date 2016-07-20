@@ -7,6 +7,7 @@ public:
 	void server();
 
 private:
+	void addRecievedMessage(RecievedMessage* msg);
 	bool handleJoinRoon(RecievedMessage* msg);
 	bool handleLeaveRoom(RecievedMessage* msg);
 	void handleGetUsersInRoom(RecievedMessage* msg);
@@ -27,17 +28,15 @@ private:
 	void handlePlayerAnswer(RecievedMessage* msg);
 	bool handleCreateRoom(RecievedMessage* msg);
 	bool handleCloseRoom(RecievedMessage* msg);
-public:
-	void addRecievedMessage(RecievedMessage* msg);
-private:
 	RecievedMessage* buildRecievedMessage(SOCKET s, int i);
-public:
-//	User* getUserByName();
-private:
 	User* getUserBySocket(SOCKET s);
 	User* getUserByName(string name);
 	Room* getRoomById(int roomId);
+
 	SOCKET _socket;
+	WSADATA wsadata;
+	SOCKADDR_IN addr;
+
 	map<SOCKET, User*> _connectedUsers;
 	DataBase _db;
 	map<, int, Room*> _roomList;
