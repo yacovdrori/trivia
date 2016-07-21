@@ -115,7 +115,6 @@
     <ClCompile Include="Helper.cpp" />
     <ClCompile Include="Question.cpp" />
     <ClCompile Include="RecievedMessage.cpp" />
-    <ClCompile Include="roomClass.cpp" />
     <ClCompile Include="server.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="sqlite3.c" />
