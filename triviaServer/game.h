@@ -1,7 +1,6 @@
 #pragma once
 #include <vector>
 #include "User.h"
-#include "sqlite3.h"
 #include "Question.h"
 #include <map>
 using namespace std;
