@@ -110,7 +110,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="game.cpp" />
     <ClCompile Include="Helper.cpp" />
+    <ClCompile Include="Question.cpp" />
     <ClCompile Include="RecievedMessage.cpp" />
     <ClCompile Include="roomClass.cpp" />
     <ClCompile Include="server.cpp" />
@@ -119,7 +121,9 @@
     <ClCompile Include="User.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="game.h" />
     <ClInclude Include="Helper.h" />
+    <ClInclude Include="Question.h" />
     <ClInclude Include="RecievedMessage.h" />
     <ClInclude Include="roomClass.h" />
     <ClInclude Include="TriviaServer.h" />

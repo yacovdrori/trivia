@@ -4,6 +4,7 @@
 #include <windows.h>
 #include <iostream>
 #include <thread>
+#include "roomClass.h"
 using namespace std;
 
 class User

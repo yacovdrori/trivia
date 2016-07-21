@@ -4,7 +4,7 @@
 #include <windows.h>
 #include <iostream>
 #include <thread>
-
+#include "TriviaServer.h"
 using namespace std;
 
 
@@ -14,7 +14,7 @@ void client_socket(SOCKET client);
 
 int main(void)
 {
-	createSocket();
+	TriviaServer server;
 	system("pause");
 	return 0;
 }
